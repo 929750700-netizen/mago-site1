@@ -69,14 +69,22 @@ async function redisCommand(command: unknown[]) {
 }
 
 export async function getSiteData(): Promise<SiteData> {
-  const supabaseData = await getSupabaseSiteData();
-  if (supabaseData) return supabaseData;
+  try {
+    const supabaseData = await getSupabaseSiteData();
+    if (supabaseData) return supabaseData;
+  } catch (error) {
+    console.warn(error);
+  }
 
   const remote = await redisCommand(["GET", redisKey]);
   if (remote?.result) return JSON.parse(remote.result) as SiteData;
 
   const localData = await readLocalSiteData();
-  await saveSupabaseSiteData(localData);
+  try {
+    await saveSupabaseSiteData(localData);
+  } catch (error) {
+    console.warn(error);
+  }
   return localData;
 }
 

@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { getSiteData } from "@/lib/content";
 
+export const dynamic = "force-dynamic";
+
 export default async function NotFound() {
   const data = await getSiteData();
   const copy = data.copy.notFound;
