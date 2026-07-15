@@ -1,0 +1,323 @@
+{
+  "settings": {
+    "siteName": "MAGO PARTY STUDIO",
+    "logo": "/media/mago-logo.png",
+    "monogram": "/media/mago-monogram.png",
+    "heroVideo": "",
+    "heroPoster": "/media/optimized/hero-rooftop.webp",
+    "heroEyebrow": "MUSIC / SOCIAL / ROOFTOP SCENE",
+    "heroTitle": "AFRO",
+    "heroSubtitle": "城市屋顶青年派对",
+    "heroDescription": "让音乐、社交与城市空间重新发生连接",
+    "douyinUrl": "",
+    "xiaohongshuUrl": "",
+    "icp": ""
+  },
+  "copy": {
+    "navigation": {
+      "cities": "CITIES",
+      "events": "EVENTS",
+      "gallery": "GALLERY",
+      "guide": "EVENT GUIDE",
+      "wechat": "WECHAT"
+    },
+    "home": {
+      "heroEventsButton": "查看活动",
+      "heroTicketButton": "小程序购票",
+      "eventsEyebrow": "UPCOMING EVENTS",
+      "eventsTitle": "即将到来的活动",
+      "eventsDescription": "点击活动海报进入微信小程序购票；电脑端可打开高清海报扫码。",
+      "eventsLink": "查看全部活动",
+      "galleryEyebrow": "LIVE GALLERY",
+      "galleryTitle": "活动现场",
+      "galleryDescription": "屋顶、落日、举杯与互动，共同构成每一次活动的现场记忆。",
+      "galleryLink": "查看全部图库",
+      "contactEyebrow": "CONTACT / WECHAT",
+      "contactTitleLine1": "活动咨询？",
+      "contactTitleLine2": "门票问题？",
+      "contactDescription": "添加微信，获取活动、购票和现场信息。",
+      "copyWechatButton": "复制微信号",
+      "copiedWechatButton": "已复制",
+      "qrHint": "长按二维码识别或保存图片"
+    },
+    "eventsPage": {
+      "eyebrow": "EVENTS",
+      "title": "ALL EVENTS",
+      "description": "选择活动，进入微信小程序购票。",
+      "sectionEyebrow": "FILTER / EXPLORE",
+      "sectionTitle": "活动列表",
+      "filterAll": "全部",
+      "filterUpcoming": "即将举行",
+      "filterSoldOut": "已售罄",
+      "filterPast": "历史活动",
+      "allCities": "全部城市",
+      "cityLabel": "城市",
+      "emptyEyebrow": "NO EVENTS",
+      "emptyTitle": "当前筛选下暂无活动",
+      "emptyDescription": "请切换城市或活动状态。"
+    },
+    "galleryPage": {
+      "eyebrow": "ROOFTOP / MUSIC / INTERACTION",
+      "title": "GALLERY",
+      "description": "记录活动现场真实发生的瞬间。",
+      "sectionEyebrow": "LIVE RECAP",
+      "sectionTitle": "现场影像",
+      "sectionDescription": "点击图片进入全屏浏览，使用方向键切换。"
+    },
+    "guidePage": {
+      "eyebrow": "BEFORE YOU ARRIVE",
+      "title": "EVENT GUIDE",
+      "description": "出发之前，你需要知道的活动信息。",
+      "sectionEyebrow": "FAQ / GUIDE",
+      "sectionTitle": "活动须知"
+    },
+    "cityPage": {
+      "eyebrowPrefix": "CITY",
+      "eventsEyebrow": "UPCOMING / PAST",
+      "eventsSuffix": "活动",
+      "galleryEyebrow": "CITY GALLERY",
+      "gallerySuffix": "现场"
+    },
+    "eventCard": {
+      "buyHint": "点击海报进入微信小程序",
+      "pastHint": "点击查看活动海报"
+    },
+    "ticketDialog": {
+      "eyebrow": "WECHAT MINI PROGRAM",
+      "scanInstruction": "请打开微信扫描海报中的小程序码购票",
+      "placeholderNotice": "当前为示例内容，请在后台绑定该场活动的小程序官方 URL。",
+      "openButton": "尝试打开小程序"
+    },
+    "footer": {
+      "tagline": "音乐 · 社交 · 屋顶现场",
+      "events": "全部活动",
+      "gallery": "活动图库",
+      "guide": "活动须知",
+      "privacy": "隐私政策",
+      "contact": "活动咨询"
+    },
+    "privacy": {
+      "eyebrow": "LEGAL",
+      "title": "PRIVACY",
+      "heading": "隐私政策",
+      "introduction": "本网站用于展示活动信息，并提供微信小程序购票入口。网站不会在未取得授权的情况下收集手机号、邮箱或身份证信息。",
+      "externalHeading": "外部链接",
+      "externalText": "点击活动海报后可能进入微信小程序。小程序中的订单、支付及个人信息处理规则，以对应小程序的隐私政策为准。",
+      "analyticsHeading": "访问统计",
+      "analyticsText": "网站可在后台配置匿名访问统计，用于了解页面浏览和活动入口点击情况。正式启用前应补充实际使用的统计服务及 Cookie 说明。",
+      "contactHeading": "联系",
+      "contactText": "如需咨询隐私相关问题，请通过网站公开的微信联系。"
+    },
+    "notFound": {
+      "eyebrow": "404 / AFTER PARTY",
+      "title": "这一页已经散场",
+      "description": "返回首页，查看下一场活动。",
+      "button": "返回首页"
+    }
+  },
+  "events": [
+    {
+      "id": "afro-next",
+      "title": "AFRO SUNSET · NEXT EDITION",
+      "slug": "afro-sunset-next",
+      "posterImage": "/media/optimized/afro-sunset-poster.webp",
+      "date": "2026-08-23",
+      "displayDate": "日期待公布",
+      "weekday": "SUN",
+      "month": "AUG",
+      "day": "23",
+      "startTime": "16:00",
+      "endTime": "22:00",
+      "city": "沈阳",
+      "venue": "城市屋顶场地 · 待公布",
+      "miniProgramUrl": "",
+      "ticketStatus": "即将开售",
+      "featured": true,
+      "visible": true,
+      "sortOrder": 1,
+      "galleryId": "afro-sunset"
+    },
+    {
+      "id": "afro-2026-0627",
+      "title": "AFRO SUNSET · 沈阳站",
+      "slug": "afro-sunset-shenyang-2026",
+      "posterImage": "/media/optimized/hero-rooftop.webp",
+      "date": "2026-06-27",
+      "displayDate": "2026.06.27",
+      "weekday": "SAT",
+      "month": "JUN",
+      "day": "27",
+      "startTime": "16:00",
+      "endTime": "22:00",
+      "city": "沈阳",
+      "venue": "SKYLINE ROOFTOP",
+      "miniProgramUrl": "",
+      "ticketStatus": "活动结束",
+      "featured": true,
+      "visible": true,
+      "sortOrder": 2,
+      "galleryId": "afro-sunset"
+    }
+  ],
+  "gallery": [
+    {
+      "id": "gallery-01",
+      "title": "AFRO SUNSET 全场合影",
+      "image": "/media/optimized/crowd-night.webp",
+      "video": "",
+      "event": "AFRO SUNSET",
+      "city": "沈阳",
+      "year": "2026",
+      "description": "夜幕下的全场参与者。",
+      "sortOrder": 1,
+      "visible": true
+    },
+    {
+      "id": "gallery-02",
+      "title": "DJ / SUNSET",
+      "image": "/media/optimized/dj-sunset.webp",
+      "video": "",
+      "event": "AFRO SUNSET",
+      "city": "沈阳",
+      "year": "2026",
+      "description": "落日、DJ 与城市天际线。",
+      "sortOrder": 2,
+      "visible": true
+    },
+    {
+      "id": "gallery-03",
+      "title": "ROOFTOP INTERACTION",
+      "image": "/media/optimized/rooftop-dance.webp",
+      "video": "",
+      "event": "AFRO SUNSET",
+      "city": "沈阳",
+      "year": "2026",
+      "description": "开放的屋顶舞池与自然互动。",
+      "sortOrder": 3,
+      "visible": true
+    },
+    {
+      "id": "gallery-04",
+      "title": "DANCE FLOOR",
+      "image": "/media/optimized/dancefloor.webp",
+      "video": "",
+      "event": "AFRO SUNSET",
+      "city": "沈阳",
+      "year": "2026",
+      "description": "被节奏点亮的舞池。",
+      "sortOrder": 4,
+      "visible": true
+    },
+    {
+      "id": "gallery-05",
+      "title": "CITY NIGHT",
+      "image": "/media/optimized/red-jacket.webp",
+      "video": "",
+      "event": "AFRO SUNSET",
+      "city": "沈阳",
+      "year": "2026",
+      "description": "城市夜色中的现场瞬间。",
+      "sortOrder": 5,
+      "visible": true
+    },
+    {
+      "id": "gallery-06",
+      "title": "SUNSET TOAST",
+      "image": "/media/optimized/sunset-toast.webp",
+      "video": "",
+      "event": "AFRO SUNSET",
+      "city": "沈阳",
+      "year": "2026",
+      "description": "落日时分的举杯与连接。",
+      "sortOrder": 6,
+      "visible": true
+    },
+    {
+      "id": "gallery-07",
+      "title": "MAGO RED CUPS",
+      "image": "/media/optimized/red-cups.webp",
+      "video": "",
+      "event": "AFRO SUNSET",
+      "city": "沈阳",
+      "year": "2026",
+      "description": "活动现场的视觉记忆。",
+      "sortOrder": 7,
+      "visible": true
+    },
+    {
+      "id": "gallery-08",
+      "title": "ROOFTOP CROWD",
+      "image": "/media/optimized/rooftop-crowd-back.webp",
+      "video": "",
+      "event": "AFRO SUNSET",
+      "city": "沈阳",
+      "year": "2026",
+      "description": "年轻人自然走进同一个节奏。",
+      "sortOrder": 8,
+      "visible": true
+    }
+  ],
+  "cities": [
+    {
+      "id": "shenyang",
+      "name": "沈阳",
+      "slug": "shenyang",
+      "coverImage": "/media/optimized/hero-rooftop.webp",
+      "description": "MAGO 活动当前举办城市。近期活动、历史现场与微信联系信息均可在后台更新。",
+      "active": true
+    }
+  ],
+  "guides": [
+    {
+      "id": "guide-time",
+      "question": "活动几点开始？",
+      "answer": "不同场次的入场时间可能不同，请以活动海报和小程序购票页面标注的时间为准。",
+      "sortOrder": 1,
+      "visible": true
+    },
+    {
+      "id": "guide-ticket",
+      "question": "如何通过微信小程序购票？",
+      "answer": "手机端点击活动海报即可尝试打开对应的小程序页面；电脑端点击海报后，请使用微信扫描海报中的小程序码。",
+      "sortOrder": 2,
+      "visible": true
+    },
+    {
+      "id": "guide-age",
+      "question": "入场年龄有什么要求？",
+      "answer": "年龄要求以具体活动页面为准。涉及酒精饮品的活动须遵守场地方及当地法律规定，并携带有效身份证件。",
+      "sortOrder": 3,
+      "visible": true
+    },
+    {
+      "id": "guide-refund",
+      "question": "门票可以退款吗？",
+      "answer": "退改规则以微信小程序购票页面展示的政策为准。活动取消或变更时，请留意官方通知。",
+      "sortOrder": 4,
+      "visible": true
+    },
+    {
+      "id": "guide-dress",
+      "question": "Dress Code 是什么？",
+      "answer": "建议选择适合屋顶、舞蹈和拍照的轻松时髦造型。具体限制请以每场活动发布的信息为准。",
+      "sortOrder": 5,
+      "visible": true
+    },
+    {
+      "id": "guide-weather",
+      "question": "天气变化如何处理？",
+      "answer": "屋顶活动会根据天气与现场安全情况调整。若时间或场地发生变化，将通过官方社交账号和微信通知。",
+      "sortOrder": 6,
+      "visible": true
+    }
+  ],
+  "wechat": {
+    "name": "MAGO 活动微信",
+    "wechatId": "mago",
+    "qrCode": "/media/wechat-contact.jpg",
+    "city": "沈阳",
+    "description": "添加 MAGO 微信，获取活动、购票和现场信息。",
+    "serviceTime": "每日 11:00–20:00",
+    "visible": true
+  }
+}
