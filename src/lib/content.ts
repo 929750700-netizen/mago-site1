@@ -1,9 +1,58 @@
 import { promises as fs } from "node:fs";
 import path from "node:path";
+import { createClient } from "@supabase/supabase-js";
 import type { SiteData } from "@/types/content";
 
 const dataPath = path.join(process.cwd(), "src", "data", "site.json");
 const redisKey = "mago:site:data";
+const siteContentId = "main";
+
+function getSupabaseAdmin() {
+  const url = process.env.SUPABASE_URL || process.env.NEXT_PUBLIC_SUPABASE_URL;
+  const serviceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
+  if (!url || !serviceRoleKey) return null;
+  return createClient(url, serviceRoleKey, {
+    auth: {
+      persistSession: false,
+      autoRefreshToken: false,
+    },
+  });
+}
+
+async function readLocalSiteData() {
+  const file = await fs.readFile(dataPath, "utf8");
+  return JSON.parse(file) as SiteData;
+}
+
+async function getSupabaseSiteData() {
+  const supabase = getSupabaseAdmin();
+  if (!supabase) return null;
+
+  const { data, error } = await supabase
+    .from("site_content")
+    .select("data")
+    .eq("id", siteContentId)
+    .maybeSingle();
+
+  if (error) throw new Error(`Supabase content read failed: ${error.message}`);
+  return (data?.data as SiteData | undefined) ?? null;
+}
+
+async function saveSupabaseSiteData(data: SiteData) {
+  const supabase = getSupabaseAdmin();
+  if (!supabase) return false;
+
+  const { error } = await supabase
+    .from("site_content")
+    .upsert({
+      id: siteContentId,
+      data,
+      updated_at: new Date().toISOString(),
+    });
+
+  if (error) throw new Error(`Supabase content save failed: ${error.message}`);
+  return true;
+}
 
 async function redisCommand(command: unknown[]) {
   const url = process.env.UPSTASH_REDIS_REST_URL;
@@ -20,13 +69,20 @@ async function redisCommand(command: unknown[]) {
 }
 
 export async function getSiteData(): Promise<SiteData> {
+  const supabaseData = await getSupabaseSiteData();
+  if (supabaseData) return supabaseData;
+
   const remote = await redisCommand(["GET", redisKey]);
   if (remote?.result) return JSON.parse(remote.result) as SiteData;
-  const file = await fs.readFile(dataPath, "utf8");
-  return JSON.parse(file) as SiteData;
+
+  const localData = await readLocalSiteData();
+  await saveSupabaseSiteData(localData);
+  return localData;
 }
 
 export async function saveSiteData(data: SiteData): Promise<void> {
+  if (await saveSupabaseSiteData(data)) return;
+
   if (process.env.UPSTASH_REDIS_REST_URL && process.env.UPSTASH_REDIS_REST_TOKEN) {
     await redisCommand(["SET", redisKey, JSON.stringify(data)]);
     return;
